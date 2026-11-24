@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mihir Deshpande — Applied AI Systems &amp; Local-First Software</title>
+  <meta
+    name="description"
+    content="Mihir Deshpande — Building local-first software, calibrated retrieval engines, agent memory systems, and applied ML research labs."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="header-top">
+        <div>
+          <h1>Mihir Deshpande</h1>
+          <p class="subtitle">Applied AI Systems &amp; Local-First Software</p>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          Theme
+        </button>
+      </div>
+      <p class="thesis">
+        Building transparent primitives, calibrated retrieval systems, and native local-first tools.
+        Focused on empirical ablations, mathematical invariants, and measurable performance over framework bloat.
+      </p>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#work">Selected Work</a>
+        <a href="#labs">Research Labs</a>
+        <a href="#principles">Principles</a>
+        <a href="https://github.com/mihird94" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="work" class="section">
+        <h2>Selected Work</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-head">
+              <h3>
+                <a href="https://github.com/mihird94/forma-office" target="_blank" rel="noopener noreferrer">
+                  forma-office
+                </a>
+              </h3>
+              <span class="meta">TypeScript &middot; Swift &middot; macOS &middot; MCP</span>
+            </div>
+            <p>
+              Seven lightweight native <code>arm64</code> macOS office and scientific notebook apps (~8.6 MB each, zero Electron)
+              with open file formats, local EmbeddingGemma 2 multimodal search, FTS5 + Accelerate SIMD hybrid ranking,
+              and a 10-tool MCP server.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>
+                <a href="https://github.com/mihird94/global-memory" target="_blank" rel="noopener noreferrer">
+                  global-memory
+                </a>
+              </h3>
+              <span class="meta">Python &middot; SQLite FTS5 &middot; ONNX &middot; MCP</span>
+            </div>
+            <p>
+              Cross-harness local memory store (Brain v3.2) shared across AI coding agents: plain Markdown truth,
+              ~1 ms O(1) FTS5 upsert, detached Ollama embeddings, ONNX <code>jina-reranker-v1-turbo-en</code> with a
+              calibrated <code>0.25</code> abstention gate, and lazy read-time conflict detection.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>
+                <a href="https://github.com/mihird94/memory-systems-lab" target="_blank" rel="noopener noreferrer">
+                  memory-systems-lab
+                </a>
+              </h3>
+              <span class="meta">Python &middot; Benchmarks &middot; Mem0g</span>
+            </div>
+            <p>
+              Five-engine agent memory benchmark arena paired with a from-scratch implementation of Mem0 / Mem0<sup>g</sup>
+              (<code>arXiv:2504.19413</code>), evaluating retrieval precision, temporal supersession, cross-domain noise
+              isolation, and write-time adversarial gates.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>
+                <a href="https://github.com/mihird94/qwen3-text-to-sql-lora" target="_blank" rel="noopener noreferrer">
+                  qwen3-text-to-sql-lora
+                </a>
+              </h3>
+              <span class="meta">PyTorch &middot; LoRA &middot; SQLite &middot; Diagnostics</span>
+            </div>
+            <p>
+              Controlled <code>bf16</code> LoRA post-training and mechanistic diagnostics for Qwen3-4B Text-to-SQL:
+              sandboxed read-only SQLite execution grading, exact QR-SVD 90%-energy rank, token-level Shannon entropy
+              shifts, and paired McNemar / bootstrap CIs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="labs" class="section">
+        <h2>Active Research Labs</h2>
+        <p class="section-note">
+          Independent applied-science implementations built from first principles, currently private while iterating through ablations and real-dataset runs.
+        </p>
+        <ul class="lab-list">
+          <li class="lab-item">
+            <div class="lab-head">
+              <strong>Causal ML &amp; Uplift Modeling</strong>
+              <span class="tag">In Progress</span>
+            </div>
+            <p>
+              From-scratch S/T/X/R-Learners, cross-fitted Double ML, Doubly Robust OPE (AIPW / IPS / SNIPS), and Qini evaluation (Criteo Uplift schema).
+            </p>
+          </li>
+          <li class="lab-item">
+            <div class="lab-head">
+              <strong>Two-Stage Recommender Systems</strong>
+              <span class="tag">In Progress</span>
+            </div>
+            <p>
+              Time-decayed co-visitation and PyTorch Two-Tower retrieval with InfoNCE &amp; LogQ popularity debiasing, followed by XGBoost LambdaRank reranking (OTTO session schema).
+            </p>
+          </li>
+          <li class="lab-item">
+            <div class="lab-head">
+              <strong>Probabilistic &amp; Hierarchical Forecasting</strong>
+              <span class="tag">In Progress</span>
+            </div>
+            <p>
+              MinT-Shrinkage hierarchical reconciliation, multi-quantile GBDT, and Split / CQR / Adaptive Conformal prediction intervals under rolling-origin CV (M5 hierarchy schema).
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="principles" class="section">
+        <h2>Principles</h2>
+        <ul class="principles-list">
+          <li><strong>Local-first primitives</strong> over cloud lock-in and framework sprawl.</li>
+          <li><strong>Empirical ablations &amp; calibrated abstention</strong> over unverified retrieval or modeling vibes.</li>
+          <li><strong>Inspectable state</strong> — plain-text files, deterministic evaluators, and reproducible invariants.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Mihir Deshpande</span>
+      <span aria-hidden="true">&middot;</span>
+      <a href="https://github.com/mihird94" target="_blank" rel="noopener noreferrer">github.com/mihird94</a>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.getElementById("theme-toggle");
+      function syncLabel() {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        btn.textContent = current === "dark" ? "Light" : "Dark";
+      }
+      syncLabel();
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-theme") || "light";
+        var next = current === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        syncLabel();
+      });
+    })();
+  </script>
+</body>
+</html>
